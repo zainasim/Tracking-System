@@ -1,0 +1,46 @@
+.mainform
+{
+    display: flex;
+    flex-direction: column !important;
+}
+.form
+{
+    font-size: 12px !important;
+}
+#fname
+{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px !important;
+    margin: 5px 0 !important;
+}
+#time
+{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px !important;
+    margin: 5px 0 !important;
+}
+.form-btn
+{
+    text-align: center;
+    font-size: 12px !important;
+    background: #e95e11 !important;
+    padding: 8px !important;
+    margin: 20px 0 0 0 !important;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.css-1wnsr1i
+{
+    position: absolute !important;
+    top: 45% !important;
+    left: 50% !important;
+    width: 350px !important;
+    border: none !important;
+}
+.media-btn
+{
+    margin-left: -48px !important;
+}
