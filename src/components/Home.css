@@ -1,0 +1,638 @@
+.header-bg
+{
+    background-image: url(../Asset/header-bg.png);
+    width: 1150px;
+    height: 538px;
+    transform: rotate(0deg);
+    position: absolute;
+    top: -300px;
+    left: -312px;
+    z-index: -1;
+}
+.header-bg1
+{
+    background-image: url(../Asset/header-bg.png);
+    width: 1150px;
+    height: 538px;
+    transform: rotate(0deg);
+    position: absolute;
+    top: -350px;
+    left: -312px;
+    z-index: -1;
+}
+.logo
+{
+    margin-top: 320px;
+    margin-left:485px ;
+    width: 25% !important;
+}
+.logos
+{
+    margin-top: 400px;
+    margin-left:350px ;
+    width: 25% !important;
+}
+.baby
+{
+    margin-top: 10px !important;
+    margin-left: 50px;
+    width: 90%;
+}
+.banner-baby
+{
+    background-color: #e95e11;
+}
+.banner-txt
+{
+    text-align: center !important;
+    font-size: 30px !important;
+    padding: 30px 20px;
+    color: white;
+    font-weight: 300 !important;
+    font-style: italic !important;
+}
+.form-box
+{
+    padding: 50px;
+    background-color:#575756;
+    border: 2px solid #e95e11;
+    border-radius: 10px;
+    margin-top: 143px;
+    margin-left: 110px !important;
+
+}
+.fname
+{
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.logbtn
+{
+    background-color:#e95e11;
+    padding: 10px;
+    width: 40%;
+    margin: 20px 75px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration:double;
+
+}
+.logbtn:hover
+{
+    background-color:white;
+    border: 1px solid #e95e11;
+    color: #e95e11;
+    box-shadow:  0px 0px 6px 2px #e95e11;
+
+}
+::placeholder {
+  text-align: center;
+}
+
+.h-form0
+{
+    margin-left: 20px;
+}  
+.h-form
+{
+    width: 80%;
+    margin: 0;
+    
+}
+.location-form
+{
+    width: 25%;
+    margin: 0;
+}
+.location-form1
+{
+    width: 15%;
+    margin-left: 30px;
+}
+.location-form2
+{
+    width: 25%;
+    margin-left: 30px;
+}
+.submit-btn
+{
+    background-color: #e95e11 !important;
+    width: 50% !important;
+    margin-left: 50px !important;
+    margin-top: 30px !important;
+    color: white !important;
+
+}
+.submit-btns
+{
+    background-color: #e95e11 !important;
+    width: 10% !important;
+    float: right;
+    /* margin-left: 60px !important; */
+    /* margin-top: 30px !important; */
+    color: white !important;
+
+}
+.submit-btnss
+{
+    background-color: #e95e11 !important;
+    width: 25% !important;
+    float: right;
+    /* margin-left: 60px !important; */
+    /* margin-top: 30px !important; */
+    color: white !important;
+
+}
+.modal-btn
+{
+    
+    background-color: #e95e11 !important;
+    color: white !important;
+    margin: 20px 0px 0px !important;
+    float: right !important;
+    margin-bottom: 50px !important;
+}
+.css-10botns-MuiInputBase-input-MuiFilledInput-input
+{
+    background: antiquewhite !important;
+}
+.css-g9m4e0-MuiInputBase-root-MuiFilledInput-root
+{
+    background: antiquewhite !important;
+}
+.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after
+{
+    border-bottom: 1px solid #e95e11 !important;
+}
+.css-g9m4e0-MuiInputBase-root-MuiFilledInput-root:after
+{
+    border-bottom: 1px solid #e95e11 !important;
+
+}
+/* video
+{
+    width: 100% ;
+    
+} */
+.media
+{
+    margin-top: 150px;
+}
+button
+{
+    background: #575756;
+    padding: 5px;
+    border: none !important;
+    color: white;
+    width: 17%;
+    
+}
+.video-btn
+{
+    background: #575756;
+    padding: 5px;
+    border: none !important;
+    color: white;
+    margin-left: 8px;
+    width: 17%;
+
+}
+.video-btn:hover
+{
+    background:#e95e11 ;
+}
+.video-btn2:hover
+{
+    background:#e95e11 ;
+}
+.video-btn-3:hover
+{
+    background:#e95e11 ;
+}
+.video-btn2
+{
+    background: #575756;
+    padding: 5px;
+    border: none !important;
+    color: white;
+    margin-top: 10px;
+    width: 54%;
+
+}
+.expense-items {
+   
+    /* margin-top: 300px; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #4b4b4b;
+  }
+.input-box
+{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 0px 0px;
+    margin: 30px;
+    border: 1px solid black;
+}
+.input-div
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+
+}
+.applicant-btn
+{
+    text-align: center;
+    background: #4b4b4b;
+    margin-top: 70px;
+    padding: 10px;
+    color: white;
+}
+.baby2
+{
+    width: 50%;
+    margin-left: 365px;
+}
+.admin-del
+{
+    display: flex;
+}
+@media (max-width: 1199px) 
+{
+    .form-box
+    {
+        margin-left: 99px !important;
+        margin-right: -55px!important;
+    }
+    .modal-btn
+{
+    margin-right: -55px !important;
+}
+.baby2
+{
+    margin-left: 315px;
+}
+
+}
+@media (max-width: 1133px) 
+{ .form-box{
+    margin-left: 33px !important;
+    margin-right: 0px!important;
+
+}
+}
+@media (max-width: 991px) 
+{
+    .form-box
+    {
+        margin-left: 35px !important;
+        width: 335px !important;
+    margin-top: 240px !important;
+
+    } 
+    .baby
+{
+    margin-top: 230px !important;
+    width: 100% !important;
+}
+.baby2 {
+    margin-left: 188px;
+    height: 220px;
+    width: 60%;
+}
+.modal-btn
+{
+    margin-right: -98px !important;
+}
+}
+
+
+@media (max-width: 899px) 
+{
+    .banner-baby
+    {
+       
+        margin-left: 0px !important;
+    }
+    .form-box
+    {
+         margin-left: 0px !important;
+        margin-top: 50px !important; 
+    }
+    .modal-btn
+{
+float: left !important;
+}
+ }
+
+ @media (max-width: 830px) 
+{
+    .banner-baby
+    {
+       
+        margin-left: 10px !important;
+    }
+    .expense-items{
+        margin-left: 15px !important;
+        width: 100% !important;
+    }
+    .form-box
+    {
+         margin-left: 10px !important;
+        margin-top: 50px !important; 
+    }
+.modal-btn
+{
+    margin-left: 10px !important;
+}
+ }
+ @media (max-width: 780px) 
+{
+    .expense-items
+    {
+        width: 100% !important;
+    }
+}
+ @media (max-width: 767px) 
+{
+    .baby
+    {
+        width: 115% !important;
+    }
+   .expense-items
+
+   {
+       width: 108% !important;
+   }
+.banner-baby
+{
+   width: 115% !important;
+}
+ }
+
+ @media (max-width: 740px) 
+{
+    .baby
+    {
+       margin-left: 20px !important;
+    }
+    .expense-items
+
+   {
+       width: 110% !important;
+   }
+    .form-box
+    {
+         margin-left: 20px !important;
+        margin-top: 50px !important; 
+    }
+    .modal-btn
+{
+    margin-left: 20px !important;
+}
+.banner-baby
+{
+  margin-left: 20px !important;
+}
+ }
+
+ @media (max-width: 680px) 
+ {
+     .baby
+     {
+        margin-left: 46px !important;
+     }
+     .expense-items
+
+     {
+         width: 120% !important;
+     }
+     .baby2
+     {
+         width: 80% !important;
+     }
+     .form-box
+     {
+          margin-left: 45px !important;
+         margin-top: 50px !important; 
+     }
+     .modal-btn
+{
+    margin-left: 40px !important;
+}
+ .banner-baby
+ {
+   margin-left: 46px !important;
+ }
+  }
+
+  
+ @media (max-width: 640px) 
+ {
+     .baby
+     {
+        margin-left: 65px !important;
+     }
+     .expense-items
+
+     {
+         width: 130% !important;
+     }
+     .baby2
+     {
+         width: 90% !important;
+     }
+     .form-box
+     {
+          margin-left: 65px !important;
+         margin-top: 50px !important; 
+     }
+     .modal-btn
+{
+    margin-left: 60px !important;
+}
+ .banner-baby
+ {
+   margin-left: 65px !important;
+ }
+  }
+
+  @media (max-width: 600px) 
+ {
+     .baby
+     {
+        margin-left: 80px !important;
+     }
+     .expense-items
+
+     {
+         width: 140% !important;
+     }
+     .baby2
+     {
+         width: 100% !important;
+         margin-left: 220px !important;
+     }
+     .form-box
+     {
+          margin-left: 80px !important;
+         margin-top: 50px !important; 
+     }
+     .modal-btn
+{
+    margin-left: 80px !important;
+}
+ .banner-baby
+ {
+   margin-left: 80px !important;
+ }
+  }
+  @media (max-width: 550px) 
+ {
+     .baby
+     {
+        margin-left: 104px !important;
+     }
+     .expense-items
+
+     {
+         width: 150% !important;
+     }
+     .baby2
+     {
+         width: 100% !important;
+         margin-left: 280px !important;
+
+     }
+     .form-box
+     {
+          margin-left: 100px !important;
+         margin-top: 50px !important; 
+     }
+     .modal-btn
+{
+    margin-left: 100px !important;
+}
+ .banner-baby
+ {
+   margin-left: 104px !important;
+ }
+  }
+
+  @media (max-width: 500px) 
+  {
+      .baby
+      {
+          width: 130% !important;
+         margin-left: 104px !important;
+      }
+      .expense-items
+
+     {
+         width: 160% !important;
+     }
+     .baby2
+     {
+         width: 100% !important;
+     }
+  .banner-baby
+  {
+    width: 130% !important;
+
+    margin-left: 104px !important;
+  }
+  .modal-btn
+{
+    margin-left: 100px !important;
+}
+   }
+ 
+   @media (max-width: 450px) 
+   {
+       .baby
+       {
+           width: 145% !important;
+          margin-left: 104px !important;
+       }
+       .expense-items
+
+     {
+         width: 180% !important;
+     }
+     .baby2
+     {
+         width: 100% !important;
+         margin-left: 350px !important;
+     }
+   .banner-baby
+   {
+     width: 145% !important;
+ 
+     margin-left: 104px !important;
+   }
+   .modal-btn
+{
+    margin-left: 100px !important;
+}
+    }
+
+    @media (max-width: 400px) 
+    {
+        .baby
+        {
+            width: 165% !important;
+           margin-left: 104px !important;
+        }
+        .expense-items
+
+     {
+         width: 210% !important;
+     }
+     .baby2
+     {
+         width: 100% !important;
+         margin-left: 420px !important;
+     }
+    .banner-baby
+    {
+      width: 165% !important;
+  
+      margin-left: 104px !important;
+    }
+
+     }
+
+     @media (max-width: 350px) 
+     {
+         .baby
+         {
+             width: 200% !important;
+            margin-left: 104px !important;
+         }
+         .expense-items
+
+     {
+         width: 240% !important;
+     }
+     .baby2
+     {
+         width: 100% !important;
+         margin-left: 470px !important;
+
+     }
+     .banner-baby
+     {
+       width: 200% !important;
+   
+       margin-left: 104px !important;
+     }
+      }
