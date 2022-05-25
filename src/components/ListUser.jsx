@@ -44,7 +44,6 @@ function InterviewQuestion() {
       },
     })
       .then((response) => {
-        debugger;
         dbresult = response.data.response;
         setData(dbresult);
       })

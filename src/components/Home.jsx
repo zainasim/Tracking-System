@@ -32,7 +32,7 @@ function Home() {
   const [textInputCity, setCityInput] = React.useState("");
   const [textInputStreet, setStreetInput] = React.useState("");
   const [textInputZip, setZipInput] = React.useState("");
-  const [phone, setPhone] = React.useState("");
+  // const [phone, setPhone] = React.useState("");
 
 
 
@@ -74,7 +74,7 @@ function Home() {
               first_name: textInputFname,
               last_name: textInputLname,
               email: textInputEmail,
-              location: textInputLocation,
+              location: result,
             },
           }
         )
@@ -103,9 +103,9 @@ function Home() {
   const handleLocationChange = (event) => {
     setLocationInput(event.target.value);
   };
-  const handlePhoneChange = (event) => {
-    setPhone(event.target.value);
-  };
+  // const handlePhoneChange = (event) => {
+  //   setPhone(event.target.value);
+  // };
   const handleCityChange = (event) => {
     setCityInput(event.target.value);
   }
@@ -158,13 +158,13 @@ function Home() {
               className="h-form"
             />
 
-            <div className="fname">PHONE </div>
+            {/* <div className="fname">PHONE </div>
             <input
               onChange={handlePhoneChange}
               type="text"
               label="phone"
               className="h-form"
-            />
+            /> */}
 
             <div className="fname">LOCATION</div>
             <input

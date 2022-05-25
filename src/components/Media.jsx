@@ -61,11 +61,9 @@ const Media = () => {
     arr = JSON.parse(sessionStorage.getItem("questions"))
     arr.shift();
     sessionStorage.setItem("questions", JSON.stringify(arr))
-
-    setURL(mediaBlobUrl);
-    debugger
-    console.log(url) 
     document.location.reload(true)
+
+    // setURL(mediaBlobUrl); 
   }
 
   return (
