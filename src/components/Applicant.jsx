@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Button,
   Grid,
@@ -12,12 +12,32 @@ import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import { fontWeight } from "@mui/system";
 import lists from "../components/data_list";
-
+import axios from "axios";
 import Modal from "../components/modal/index";
 
 function Applicant() {
 
     const navigate = useNavigate();
+    const [data, setData] = useState([]);
+    let dbresult = [];
+    const URL = "https://applicanttrackingsystem.herokuapp.com/questionnaire/get_all_users/";
+  useEffect(() => {
+    axios({
+      method: "GET",
+      url: URL,
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
+    })
+      .then((response) => {
+        dbresult = response.data.response;
+        setData(dbresult);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
     const nextComponent = () => {
         navigate("/dashboard");
     }
@@ -27,6 +47,31 @@ function Applicant() {
     const settingComponent = () => {
       navigate("/setting");
     }
+
+    const deleteUser = async (email) => {
+      console.log(email)
+      axios({
+        method: "POST",
+        url: "https://applicanttrackingsystem.herokuapp.com/questionnaire/delete_user/",
+        data: {
+          email: email,
+        },
+        headers: {
+          Authorization: "Bearer " + localStorage.getItem("token"),
+        },
+      })
+        .then((response) => {
+          alert("Deleted Successfully")
+          document.location.reload(true)
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    };
+  
+    const ListUsers = () => {
+      navigate("/list");
+    };
 
   return (
     <>
@@ -66,17 +111,17 @@ function Applicant() {
          </Grid>
          
          <Grid item xs={4} sx={{marginLeft:"100px"}}>
-            {lists.map((list) => {
+            {data.map((list) => {
               return (
                 <>
                   <div className="input-box">
                         <div className="input-div">
-                        <label> NAME={list.name}</label>
+                        <label> NAME={list.first_name}</label>
                         <label> EMAIL={list.email}</label>
-                        <label> PHONE={list.phone}</label>
-                        <label> DATE={list.date}</label>
+                        <label> Location={list.location}</label>
+                        {/* <label> DATE={list.date}</label> */}
                         </div>
-                        <div className="applicant-btn">DELETE</div>
+                        <div onClick={() => deleteUser(list.email)} className="applicant-btn">DELETE</div>
                   </div>
                 </>
               );

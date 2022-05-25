@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Button,
   Grid,
@@ -13,10 +13,29 @@ import "./Home.css";
 import { fontWeight } from "@mui/system";
 import Modal from "../components/modal/index";
 import Applicant from "./Applicant";
+import axios from "axios";
 import Setting from "./Setting";
 
 function Dashboard() {
     const navigate = useNavigate();
+    const [data, setData] = useState('');
+
+    useEffect(() => {
+      axios({
+        method: "GET",
+        url: "https://applicanttrackingsystem.herokuapp.com/accounts/user_count/",
+        headers: {
+          Authorization: "Bearer " + localStorage.getItem("token"),
+        },
+      })
+        .then((response) => {
+          setData(response.data.response)
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }, []);
+
     const nextComponent = () => {
         navigate("/dashboard");
     }
@@ -69,7 +88,7 @@ function Dashboard() {
           </Typography>
           <Box  sx={{textAlign:"center",color:"lightgrey", fontSize:"20px",fontWeight:"500"
           ,padding:"30px",border:"1px solid lightgrey",fontSize:"20px"}}>
-            3
+            10
           </Box>
          </Grid>
 
@@ -79,7 +98,7 @@ function Dashboard() {
           </Typography>
           <Box  sx={{textAlign:"center",color:"lightgrey", fontSize:"20px",fontWeight:"500"
           ,padding:"30px",border:"1px solid lightgrey",fontSize:"20px"}}>
-            7
+            {data}
           </Box>     
          </Grid>
         </Grid>
